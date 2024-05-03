@@ -1,0 +1,65 @@
+body{
+    font-family: 'sans-serif' , cursive ;
+    background-image: linear-gradient(135deg, #0b0013 0%, #7700bb 100%);
+    margin: 0;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    transition: 0.2s linear;
+}
+
+.logo:hover{
+    height: 75px;
+    width: 75px;
+    transition: 0.2s linear;
+}
+.list-a{
+    text-decoration: none;
+    font-size: 1.35rem;
+    color: rgb(0,0,0);
+    transition: 0.3s;
+    text-align: left;
+}
+
+.info_container{
+    display: none;
+}
+.list-a:hover{
+    font-size: 23.8px;
+    transition: 0.3s ;
+    text-decoration: underline;
+}
+
+.container{
+   width: 100%;
+}
+.shevcheko_images{
+    height: 75px;
+    width: auto;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 20px;
+}
+
+.shevcheko_images:hover{
+    height: 200px;
+    width: auto;
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.name{
+    text-align: center;
+    letter-spacing: 10px;
+}
+.h2name{
+    color: beige;
+    text-align: center;
+}
+
+#open,#closed{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
