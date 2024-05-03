@@ -42,6 +42,50 @@ nav{
 }
 
 .menu-list li a {
+    color: #fff;*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(135deg, #0b0013 0%, #7700bb 100%);
+    margin: 0;
+}
+
+nav{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 0;
+    background-color: #A374FA;
+    text-align: right;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    transition: 0.2s linear;
+}
+
+.logo:hover{
+    height: 75px;
+    width: 75px;
+    transition: 0.2s linear;
+}
+.menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:transparent;
+    padding: 10px;
+}
+
+.menu-list li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-list li a {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -178,32 +222,23 @@ header{
     outline: none;
     border: none;
     width: 80px;
-    margin-left: 290px;
+    margin-left: 9.2rem;
 }
 
 .main_section2{
-    position: absolute;
     right: 200px;
     bottom: 0;
     top: 685px;
     text-align: center;
     margin-bottom: 17px;
+    width: 50%;
+    align-items: center;
 }
 
 .photo{
     height: 250px;
     width: 176px;
     border-radius: 10px;
-}
-
-.buy2{
-    background: #C4C4C4;
-    border-radius: 17px;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    width: 80px;
-    margin-left: 9rem;
 }
 
 .main_section3{
@@ -213,15 +248,22 @@ header{
 }
 
 .main_section4{
-    position: absolute;
     right: 200px;
     bottom: 0;
     top: 1077px;
     text-align: center;
     margin-bottom: 17px;
+    width: 50%;
+    align-items: center;
 }
 
 .znak{
     font-family: cursive;
     font-size: 1.35rem;
+}
+
+.sections_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
