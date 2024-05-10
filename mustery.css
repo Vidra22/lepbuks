@@ -42,10 +42,7 @@ nav{
 }
 
 .menu-list li a {
-    color: #fff;*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    color: #fff;
 }
 body{
     background-image: linear-gradient(135deg, #0b0013 0%, #7700bb 100%);
@@ -146,17 +143,15 @@ nav{
 main{
     margin-left: .5cm;
     color: #fff;
+    margin-right: .5cm;
 }
 
 header{
+    background-image: url(./images/image_header1.png);
     height: 100vh;
     width: 100%;
 }
 
-.header-image{
-    height: 100vh;
-    width: 100%;
-}
 
 .letter_name{
     font-family: "Advent Pro", sans-serif;
@@ -215,20 +210,24 @@ header{
     margin-bottom: 17px;
 }
 
-.buy{
-    background: #C4C4C4;
+.buy.summary {
+    display: flex;
+    background-color: #C4C4C4;
     border-radius: 17px;
     cursor: pointer;
-    outline: none;
-    border: none;
     width: 80px;
-    margin-left: 9.2rem;
+    justify-content: center;
+    align-items: center;
+    padding: .50rem;
+    font-size: 24px;
+}
+
+::marker{
+    color: #fff;
+    display: none;
 }
 
 .main_section2{
-    right: 200px;
-    bottom: 0;
-    top: 685px;
     text-align: center;
     margin-bottom: 17px;
     width: 50%;
@@ -244,13 +243,11 @@ header{
 .main_section3{
     text-align: center;
     width: 50%;
+    margin-bottom: 17px;
     align-items: center;
 }
 
 .main_section4{
-    right: 200px;
-    bottom: 0;
-    top: 1077px;
     text-align: center;
     margin-bottom: 17px;
     width: 50%;
@@ -260,6 +257,207 @@ header{
 .znak{
     font-family: cursive;
     font-size: 1.35rem;
+}
+
+.sections_div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social_set_img{
+    height: 40px;
+    width: 40px;
+    transition: 0.3s;
+}
+
+.main{
+    position: absolute;
+    top: 1550px;
+    right: 50px;
+    height: 400px;
+    width: 400px;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+.pro_nas{
+    background-color: #167E9E;
+    padding: 30px;
+    border-radius: 13.5px;
+}
+
+.name_opys{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.main_images{
+    height: 368px;
+    width: 235px;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.images_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imageses{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cont_im{
+    gap: 20px;
+}
+
+.social_set_img:hover{
+    transition: 0.3s;
+    transform: rotate(-45deg);
+}
+
+.names{
+    transition: 0.34s;
+}
+
+.names:hover{
+    transition: 0.34s;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.contact-container{
+    background-color: #FBAC35;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 558px;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title .form-name-left{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder{
+    transition: 0.2s;
+    color: #a9a9a9;
+}
+
+
+.contact-left .submit{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #000000;
+    border: none;
+    gap: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+
+    .contact-right{
+        display: none;
+    }
+
+    .main{
+        display: none;
+    }
+}
+
+footer{
+    background-color: #A374FA;
+    margin-top: 15px;
+    padding: 2rem;
+}
+
+.footer_logo_image{
+    position: absolute;
+    top: 3500px;
+    right: 50px;
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+}
+
+
+.soc_merezi{
+    margin-top: 15px;
+}
+
+.footer_social{
+    height: 74px;
+    width: 74px;
+    border-radius: 10px;
+}
+
+.my_social{
+    text-decoration: none;
+    font-size: 27px;
+    color: #000000;
+    transition: 0.2s;
+    
+}
+
+.my_social:hover{
+    transition: 0.2s;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.my_social:focus{
+    color: #fff;
 }
 
 .sections_div{
