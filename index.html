@@ -1,16 +1,20 @@
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/svg+xml" href="./images/Майстерня шаленого вчителя.png"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
     <link rel="stylesheet" href="style.css"/>
     <title>Майстерня шаленого вчителя</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="./images/Майстерня шаленого вчителя.png"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
     </head>
     <body>
         <header>
+            <div class="free">
+                <h2 class="googleDiskName">Безкоштовні матеріали можна завантажити  <a href="" class="files_link"> тут </a></h2>
+                <button id="closeBtn" class="close"><span class="material-symbols-outlined">close</span></button>
+                    </div>
             <nav>
                 <div class="special">
                     <p class="special_name">
@@ -165,6 +169,7 @@
                     <img src="./images/qwestion.png" alt="" class="qwestion">
                 </div>
             </div>
+            <button class="goToTop" onclick="scrollToTop()"><span class="material-symbols-outlined">arrow_upward</span></button>
         </main>
         <footer>
             <h2 class="tel">+380 66 150 3184 - довідка</h2>
@@ -180,5 +185,7 @@
                 </span> Профіль на Vseosvita</a>
                 <img src="./images/Майстерня шаленого вчителя.png" alt="" class="footer_logo_image">
         </footer>
+        <script src="./totop.js"></script>
+        <script src="./new.js"></script>
     </body>
 </html>
