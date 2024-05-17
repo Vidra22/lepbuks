@@ -1,0 +1,298 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --light: #fff;
+    --dark: #000;
+    --size: 100px;
+    --heig: auto;
+    --trans_time: 0.2s;
+}
+
+body{
+    background-image: linear-gradient(135deg, #0b0013 0%, #7700bb 100%);
+    margin: 0;
+}
+
+nav{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 0;
+    background-color: #A374FA;
+    text-align: right;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    transition: 0.2s linear;
+}
+
+.logo:hover{
+    height: 75px;
+    width: 75px;
+    transition: 0.2s linear;
+}
+.menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:transparent;
+    padding: 10px;
+}
+
+.menu-list li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-list li a {
+    color: #fff;
+}
+.menu-list li {
+    display: inline-block;
+    position: relative;
+}
+
+
+.list-a{
+    text-decoration: none;
+    font-size: 1.35rem;
+    color: rgb(0,0,0);
+    transition: 0.3s;
+    letter-spacing: 4px;
+    margin-left: 5px;
+}
+
+
+.list-a:hover{
+    font-size: 23.8px;
+    transition: 0.3s ;
+    text-decoration: underline;
+}
+
+.special{
+    width: 150px;
+    background-color: #FF6B00;
+    text-align: center;
+}
+
+.special_log{
+    transition: 0.3s linear;
+    text-align: center;
+}
+
+.special_log:hover{
+    border-bottom: 2px solid white;
+    color: white;
+    transition: 0.5s linear;
+    width: 70px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.name{
+    text-align: center;
+    letter-spacing: 10px;
+    margin-top: 115px;
+    color: var(--light);
+}
+
+.free{
+    position: fixed;
+    display: flex;
+    top: 0;
+    background-color: lightblue;
+    width: 100%;
+    height: 50px;
+}
+
+.close{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.googleDiskName{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.files_link{
+    margin-left: 5px;
+}
+
+main{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: .5cm;
+    color: #fff;
+    margin-right: .5cm;
+    margin-top: 40px;
+}
+
+.posts_img{
+    transition: var(--trans_time);
+    height: var(--heig);
+    width: var(--size);
+    border-radius: 10px;
+}
+
+.all_content section{
+    background-color: var(--dark);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.all_articles{
+    padding: 15px;
+}
+
+
+.goToTop{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 20px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background-color: cadetblue;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.goToTop:focus{
+    border: 2px solid black;
+}
+
+.goToTop:hover{
+    transition: 0.2s;
+    padding: 25px;
+}
+
+.names__writers{
+    transition: var(--trans_time);
+    margin-bottom: 15px;
+}
+
+.opys_lepbuka{
+    transition: var(--trans_time);
+    margin-bottom: 15px;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#A374FA);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,black);
+}
+
+.soc_merezi{
+    margin-top: 15px;
+}
+
+.footer_social{
+    height: 74px;
+    width: 74px;
+    border-radius: 10px;
+}
+
+.my_social{
+    text-decoration: none;
+    font-size: 27px;
+    color: #000000;
+    transition: 0.2s;
+    
+}
+
+.my_social:hover{
+    transition: 0.2s;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.my_social:focus{
+    color: #fff;
+}
+
+
+.buy.summary {
+    display: flex;
+    background-color: #C4C4C4;
+    border-radius: 17px;
+    cursor: pointer;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: .50rem;
+    font-size: 24px;
+}
+
+.buy::marker {
+    content: none;
+}
+ 
+summary{
+    cursor: pointer;
+}
+
+.social_set_img{
+    height: 40px;
+    width: 40px;
+    transition: 0.3s;
+}
+
+.social_set_img:hover{
+    transition: 0.3s;
+    transform: rotate(-45deg);
+}
+
+.opys_lepbuka:hover{
+    transition: var(--trans_time);
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.names__writers:hover{
+    transition: var(--trans_time);
+    color: #FF6B00;
+    font-size: 25px;
+}
+
+.posts_img:hover{
+    transition: var(--trans_time);
+    height: auto;
+    width: 130px;
+}
+
+video{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+footer{
+    background: #7700bb;
+    padding: 15px;
+}
