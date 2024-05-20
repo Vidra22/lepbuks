@@ -109,9 +109,7 @@ nav{
 }
 
 main{
-    margin-left: .5cm;
     color: #fff;
-    margin-right: .5cm;
 }
 
 header{
@@ -173,7 +171,7 @@ header{
 
 .main_section1{
     align-items: center;
-    width: 50%;
+    width: 40%;
     text-align: center;
     margin-bottom: 17px;
 }
@@ -201,7 +199,7 @@ summary{
 .main_section2{
     text-align: center;
     margin-bottom: 17px;
-    width: 50%;
+    width: 40%;
     align-items: center;
 }
 
@@ -209,11 +207,12 @@ summary{
     height: 250px;
     width: 176px;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 .main_section3{
     text-align: center;
-    width: 50%;
+    width: 40%;
     margin-bottom: 17px;
     align-items: center;
 }
@@ -221,7 +220,7 @@ summary{
 .main_section4{
     text-align: center;
     margin-bottom: 17px;
-    width: 50%;
+    width: 40%;
     align-items: center;
 }
 
@@ -304,7 +303,7 @@ summary{
     height: 558px;
     width: 100%;
     border-radius: 25px;
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .contact-left{
@@ -487,4 +486,11 @@ footer{
 .goToTop:hover{
     transition: 0.2s;
     padding: 25px;
+}
+
+.main_section1 , .main_section2 , .main_section3 , .main_section4{
+    border: 2px dashed white;
+    background: #0b0013;
+    border-radius: 50px;
+    margin-left: 90px;
 }
